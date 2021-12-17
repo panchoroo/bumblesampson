@@ -1,0 +1,151 @@
+// Widescreens
+@include mediaXl {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+// Desktops & Laptops
+.show-on-large {
+  display: none;
+}
+@include mediaMd {
+  .show-on-large {
+    display: block;
+    padding-bottom: 2rem;
+  }
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: row;
+    .item {
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      // background: $secondary-color;
+      // background: lighten($primary-color, 50);
+      background: rgba(lighten($primary-color, 3), 0.7);
+      padding: .25rem;
+      img {
+        border: none;
+      }
+      .item-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 64px;
+        i {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+    @include mediaMd {
+      transform: translate3d(0, 0, 0);
+      background: rgba(3, 23, 8, 0.5);
+    }
+  }
+
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(100%, 0, 0);
+    font-size: 24px;
+  }
+
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+
+    .portrait {
+      // TODO: trim photo
+      background: url('../img/portrait.jpg');
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  .about-info {
+    grid-template-areas:
+      'bioimage'
+      'bio'
+      'job1'
+      'job2'
+      'job3';
+
+    grid-template-columns: 1fr;
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+// Tablets & Small Laptops
+@include mediaMd {
+  main {
+    align-items: center;
+    text-align: center;
+
+    h1.lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+      margin-top: 6rem;
+      @include mediaLg {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    .menu-branding {
+      display: none;
+      @include mediaLg {
+        display: block;
+        width: fit-content;
+        height: fit-content;
+        .portrait {
+          border-radius: 0;
+          width: 100px;
+          height: 77px;
+          background-position: center;
+          background-size: cover;
+          border: none;
+        }
+      }
+    }
+    ul.menu-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      height: fit-content;
+    }
+  }
+}
+
+main {
+  padding: 2rem;
+  #home h1 {
+    margin-top: 10vh;
+  }
+
+  .lg-heading {
+    margin-top:1rem;
+    font-size: 5rem;
+  }
+}
+
+.projects {
+  grid-template-columns: 1fr;
+}
