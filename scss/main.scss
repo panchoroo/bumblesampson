@@ -15,7 +15,6 @@ body {
   line-height: 1.5;
 }
 
-// Headings
 h1,
 h2,
 h3 {
@@ -116,7 +115,6 @@ main {
   }
 }
 
-// Work/Projects
 .projects {
   display: grid;
   grid-gap: 0.7rem;
@@ -134,7 +132,6 @@ main {
   }
 }
 
-// Contact Page
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -160,7 +157,6 @@ main {
   }
 }
 
-// Button Styles
 .btn {
   display: block;
   padding: 0.5rem 1rem;

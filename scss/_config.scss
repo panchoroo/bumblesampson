@@ -2,8 +2,8 @@ $primary-color: #020e05;
 $secondary-color: #06290e;
 $white: #fff;
 $show-home-image: true;
-$home-image: url(../img/sadanam.jpg);
-$background-opacity: 0.65;
+$home-image: url(../img/sada_nam.jpg);
+$background-opacity: 0.75;
 
 .white-text {
   color: $white
@@ -26,9 +26,9 @@ $background-opacity: 0.65;
         top: 0;
         right: 0;
         width: 100%;
-        height: 100%;
+        height: 130vh;
         z-index: -1;
-        background: rgba(rgb(196, 196, 196), $background-opacity);
+        background: rgba(rgb(240, 239, 239), $background-opacity);
       }
     }
   }

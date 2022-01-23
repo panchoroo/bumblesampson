@@ -93,6 +93,9 @@ ul.menu-nav,
 
 // Tablets & Small Laptops
 @include mediaMd {
+  body#bg-img:after {
+    height: 100%;
+  }
   main {
     align-items: center;
     text-align: center;

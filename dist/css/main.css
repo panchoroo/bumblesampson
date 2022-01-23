@@ -119,7 +119,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/sadanam.jpg);
+    background: url(../img/sada_nam.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -128,9 +128,9 @@ body {
       top: 0;
       right: 0;
       width: 100%;
-      height: 100%;
+      height: 130vh;
       z-index: -1;
-      background: rgba(196, 196, 196, 0.65); }
+      background: rgba(240, 239, 239, 0.75); }
 
 h1,
 h2,
@@ -325,6 +325,8 @@ div.menu-branding {
   grid-template-columns: repeat(2, 1fr); }
 
 @media screen and (min-width: 768px) {
+  body#bg-img:after {
+    height: 100%; }
   main {
     align-items: center;
     text-align: center; }
