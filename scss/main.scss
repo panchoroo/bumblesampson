@@ -188,4 +188,23 @@ main {
   height: 60px;
 }
 
+.sound-healing {
+  ul {
+    padding-left: 0;
+  }
+  
+  li {
+    list-style: none;
+    border-bottom: 2px solid #06290e;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  iframe {
+    margin-top: 10px;
+    width: -webkit-fill-available;
+    max-width: 600px;
+  }
+}
+
 @import 'mobile';
