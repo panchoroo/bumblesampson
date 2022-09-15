@@ -258,6 +258,20 @@ main {
   color: #fff;
   height: 60px; }
 
+.sound-healing ul {
+  padding-left: 0; }
+
+.sound-healing li {
+  list-style: none;
+  border-bottom: 2px solid #06290e;
+  padding: 10px;
+  margin-bottom: 10px; }
+
+.sound-healing iframe {
+  margin-top: 10px;
+  width: -webkit-fill-available;
+  max-width: 600px; }
+
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
