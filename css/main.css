@@ -388,3 +388,12 @@ main {
 
 .projects {
   grid-template-columns: 1fr; }
+
+.mysticmag {
+  padding: 2rem;
+  padding-top: 0;
+}
+
+.mysticmag img {
+  width: 100%;
+}
